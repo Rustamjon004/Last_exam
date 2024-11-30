@@ -1,4 +1,6 @@
 from pathlib import Path
+
+
 from environs import Env
 
 env = Env()
@@ -11,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str("DJANGO_SECRET_KEY")
+SECRET_KEY = 'j(q9!38smb*uq(+&d001+o&8l%zaeb+3x1p2adfc(0!d%nxk7*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,8 +146,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = env.str("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY")
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = env.str("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET")
+
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
     'email',
     'profile',
@@ -157,6 +158,9 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = env.str("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = env.str("EMAIL_HOST_PASSWORD")
 
+EMAIL_HOST_USER = 'odiloffr@gmail.com'
+EMAIL_HOST_PASSWORD = 'klotxeqwiwpkvdmg'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '401651436956-o226cuu87eepdeb83karpc81ifu8idff.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
