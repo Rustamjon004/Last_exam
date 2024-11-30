@@ -136,8 +136,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'app_user.UserModel'
+
 LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'home' # TODO redirect
+LOGIN_REDIRECT_URL = 'home'
+
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
@@ -152,15 +154,14 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
     'profile',
 ]
 
-
+# Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
-
 EMAIL_HOST_USER = 'odiloffr@gmail.com'
 EMAIL_HOST_PASSWORD = 'klotxeqwiwpkvdmg'
 
+# Social 0auth
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '401651436956-o226cuu87eepdeb83karpc81ifu8idff.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
