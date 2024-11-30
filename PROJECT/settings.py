@@ -165,3 +165,5 @@ EMAIL_HOST_PASSWORD = 'klotxeqwiwpkvdmg'
 # Social 0auth
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '401651436956-o226cuu87eepdeb83karpc81ifu8idff.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+
+GOOGLE_CLIENT_ID = '401651436956-o226cuu87eepdeb83karpc81ifu8idff.apps.googleusercontent.com '
